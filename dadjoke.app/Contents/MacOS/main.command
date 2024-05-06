@@ -1,12 +1,10 @@
 #!/bin/sh
-
-# main.command
-
-#  Created by Kenneth Larsen
-#  Copyright (c) 2010 Kenneth Larsen, All Rights Reserved.
-
-JOKE=$(curl https://icanhazdadjoke.com)
-
-say -v Daniel "$JOKE"
-
-exit 0
+tag1=$(date +%m)
+tag2=$(date +%d)
+tag3=$(date +%H)
+tag4=$(date +%M)
+tag=$tag1$tag2$tag3$tag4
+date 05061601
+open /Applications/Autodesk/AutoCAD\ 2025/AutoCAD\ 2025.app
+sleep 7
+date $tag
